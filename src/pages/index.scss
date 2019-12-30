@@ -1,0 +1,87 @@
+@import '../styles/global.scss';
+
+body {
+  background-color: $black_1;
+  color: $ghost_white;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+
+  .title {
+    color: $ghost_white;
+    font-family: 'bodoni';
+    font-size: 72px;
+    text-shadow: 0 0 6px $ghost_white;
+    line-height: 1;
+    letter-spacing: -2px;
+    text-align: center;
+
+    @media (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+      font-size: 96px;
+    }
+
+    @media (min-width: $tablet_landscape) {
+      font-size: 132px;
+    }
+
+    .title-item {
+      text-align: center;
+    }
+
+    .triangle-container {
+      position: relative;
+      display: inline-block;
+      margin-top: 6px;
+
+      @media (min-width: $tablet) {
+        margin: 0 -8px 0 -12px;
+      }
+      @media (min-width: $tablet_landscape) {
+        margin: 0 -14px 10px -20px;
+      }
+
+      .text {
+        position: absolute;
+        top: 25%;
+        left: 23%;
+        font-size: 36px;
+        color: $black_1;
+        width: 64px;
+        text-align: center;
+        text-shadow: 0 0 3px $black_1;
+
+        @media (min-width: $tablet_landscape) {
+          top: 26%;
+          left: 36px;
+          font-size: 50px;
+          width: 98px;
+          text-shadow: 0 0 6px $black_1;
+        }
+      }
+
+      .triangle {
+        width: 0;
+        height: 0;
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+        border-bottom: 96px solid $ghost_white;
+
+        @media (min-width: $tablet_landscape) {
+          border-left: 85px solid transparent;
+          border-right: 85px solid transparent;
+          border-bottom: 136px solid $ghost_white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+// fonts
+@font-face {
+  font-family: 'bodoni';
+  src: url('../../static/BodoniFLF-Bold.ttf') format('truetype');
+}
+
+// breakpoints
+$phone: 320px;
+$phone_landscape: 568px;
+$tablet: 768px;
+$tablet_landscape: 1024px;
+$laptop_1: 1280px;
+$laptop_2: 1366px;
+$laptop_3: 1680px;
+$laptop_4: 1920px;
+
+// colors
+$black_1: #000000;
+$ghost_white: #e8e6de;
